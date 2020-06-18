@@ -1,0 +1,57 @@
+Problem: Divide a round pizza into 11 equal pieces using a clock.
+
+Observation.
+Question says, it is possible to divide the pizza into 11 pieces using a clock.
+Pizza is cut into pieces in  shape like we usually cut - circular sector.
+The hour and minute hands can be used to draw lines. 
+I can clearly see the clock can be used to make lines for cutting the pizza.
+Hour hand and minute hand overlaps.
+
+Test: Cut the pieces into 12 pieces using a clock.
+No-brainer way to cut the pizza is to cut it into 12 equal pieces.
+The angle of each piece is 360/12 which is 30 degrees.
+Passed.
+
+Test: Cut the 12th piece into 11 pieces.
+An angle of a pizza piece is 30. So, a pizza piece is divided by 11, sliced piece is of the additional angle for the other pieces.
+Angle of the additional piece is 2 and 8/11 degrees. 8/11 is 0.72 (rounded to second decimal place).
+So, a piece has an angle of 30 + 2 + 8/11 which is 32 and 8/11 degrees. It's 32.72 in decimal form. 
+Passed.
+
+Likewise, if an hour is divided into 11 pieces, how many minutes is each piece?
+60/11 is 5 minutes and a 5/11 minute. 
+How many seconds is 5/11 minute? 60 / 11 * 5 = 60 * 5 / 11 = 300 / 11 = 27 + 3/11 = 27.27. 
+So, an additional piece is 5 minutes and 27 seconds and 3/11 of a second. 
+3/11 of a second is 272.72 milliseconds.
+
+Test: Cut the pizza into 11 equal pieces at right time.
+The angle of 11 equal pizza pieces is 32.72 degrees.
+This angle is equivalent to 1 hour 5 minute and 27.27 seconds approximately.
+Draw a line at 12 O'clock. Then, when 27 seconds 5 minutes past 1 O'clock, draw a line with third hand.
+Pass
+
+Test: Cut the pizza when hour hand and minute hand overlap.
+Does a hour hand and a minute hand overlap on each other? Yes.
+Does a hour hand and a minute hand overlap on each other at any of the following?
+I actually googled the clock to check if the hour and minute hands match.
+hr:mn:sc:mlsc            Result                                   Evidence
+00:00:00:0000 ? Hour hand and minute hand match. https://etc.usf.edu/clipart/34300/34314/nclock-12-00_34314.htm
+01:05:27:0272 ? Hour hand and minute hand match. https://etc.usf.edu/clipart/33600/33659/nclock-01-05_33659.htm
+02:10:54:0545 ? Hour hand and minute hand match. https://etc.usf.edu/clipart/33700/33725/nclock-02-11_33725.htm
+03:16:21:0818 ? Hour hand and minute hand match. https://etc.usf.edu/clipart/33700/33790/nclock-03-16_33790.htm
+04:21:49:0090 ? Hour hand and minute hand match. https://etc.usf.edu/clipart/33800/33855/nclock-04-21_33855.htm
+05:27:16:0363 ? Hour hand and minute hand match. https://etc.usf.edu/clipart/33900/33921/nclock-05-27_33921.htm
+06:32:43:0636 ? Hour hand and minute hand match. https://etc.usf.edu/clipart/33900/33986/nclock-06-32_33986.htm
+07:38:11:0909 ? Hour hand and minute hand match. https://etc.usf.edu/clipart/34000/34052/nclock-07-38_34052.htm
+08:43:39:0181 ? Hour hand and minute hand match. https://etc.usf.edu/clipart/34100/34117/nclock-08-43_34117.htm
+09:49:06:0454 ? Hour hand and minute hand match. https://etc.usf.edu/clipart/34100/34183/nclock-09-49_34183.htm
+10:54:33:0727 ? Hour hand and minute hand match. https://etc.usf.edu/clipart/34200/34248/nclock-10-54_34248.htm
+
+Answer: Cut the pizza into 11 equal pieces using a clock, cut the pizza when the hour hand and minute hand overlap.
+
+Code implementation of this question is a clock app that cuts a pizza into 11 equal parts by cutting along the hour and minute hands 
+when they overlap.
+
+
+
+
